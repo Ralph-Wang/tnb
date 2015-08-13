@@ -226,6 +226,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 		endif
 		if a:bg != ""
 			exec "hi " . a:group . " guibg=#" . a:bg . " ctermbg=" . <SID>rgb(a:bg)
+        else
+			exec "hi " . a:group . " guibg=#" . s:background . " ctermbg=" . <SID>rgb(a:bg)
 		endif
 		if a:attr != ""
 			exec "hi " . a:group . " gui=" . a:attr . " cterm=" . a:attr
@@ -265,7 +267,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
 	" Standard Highlighting
 	call <SID>X("Comment", s:comment, "", "")
-	call <SID>X("Todo", s:comment, s:background, "")
+	call <SID>X("Todo", s:red, s:yellow, "")
 	call <SID>X("Title", s:comment, "", "")
 	call <SID>X("Identifier", s:red, "", "none")
 	call <SID>X("Statement", s:foreground, "", "")
