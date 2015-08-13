@@ -266,7 +266,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	" Standard Highlighting
 	call <SID>X("Comment", s:comment, "", "")
 	call <SID>X("Todo", s:red, s:yellow, "")
-	call <SID>X("Title", s:comment, "", "")
+	call <SID>X("Title", s:red, "", "")
 	call <SID>X("Identifier", s:aqua, "", "none")
 	call <SID>X("Statement", s:foreground, "", "")
 	call <SID>X("Conditional", s:foreground, "", "")
@@ -276,7 +276,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("Constant", s:orange, "", "")
 	call <SID>X("Keyword", s:orange, "", "")
 	call <SID>X("String", s:green, "", "")
-	call <SID>X("Special", s:blue, "", "")
+	call <SID>X("Special", s:aqua, "", "")
 	call <SID>X("PreProc", s:purple, "", "")
 	call <SID>X("Operator", s:aqua, "", "none")
 	call <SID>X("Type", s:blue, "", "none")
