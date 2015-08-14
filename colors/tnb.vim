@@ -359,10 +359,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("coffeeObject", s:yellow, "", "")
 
 	" HTML Highlighting
-	call <SID>X("htmlTag", s:red, "", "")
+	call <SID>X("htmlTag", s:aqua, "", "")
 	call <SID>X("htmlTagName", s:red, "", "")
-	call <SID>X("htmlArg", s:red, "", "")
-	call <SID>X("htmlScriptTag", s:red, "", "")
+	call <SID>X("htmlArg", s:orange, "", "")
+	call <SID>X("htmlScriptTag", s:aqua, "", "")
 
 	" Diff Highlighting
 	call <SID>X("diffAdd", "", "4c4e39", "")
