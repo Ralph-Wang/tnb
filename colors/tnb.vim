@@ -487,4 +487,4 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 endif
 
 set background=light
-highlight CursorLine guibg=1005 ctermbg=1005
+highlight CursorLine ctermbg=1005
