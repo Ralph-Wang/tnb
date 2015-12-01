@@ -487,4 +487,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 endif
 
 set background=light
+
+" set background for terminal
 highlight CursorLine ctermbg=1005
+highlight ColorColumn ctermbg=1005
